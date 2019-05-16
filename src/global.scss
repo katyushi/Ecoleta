@@ -9,3 +9,29 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.ion-color-military {
+    --ion-color-base: #4F8C32;
+    --ion-color-base-rgb: 79,140,50;
+}
+
+.ion-color-avocato {
+    --ion-color-base: #628C4F;
+    --ion-color-base-rgb: 98,140,79;
+}
+
+.ion-color-plastic {
+    --ion-color-base: #B3D92B;
+    --ion-color-base-rgb: 179,217,43;
+}
+
+.ion-color-puke {
+    --ion-color-base: #9FBF2C;
+    --ion-color-base-rgb: 159,191,44;
+}
+
+.ion-color-white {
+    --ion-color-base: #F2F2F2;
+    --ion-color-base-rgb: 242,242,242;
+}
+
