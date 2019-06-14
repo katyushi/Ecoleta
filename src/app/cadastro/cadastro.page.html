@@ -4,7 +4,7 @@
             <ion-back-button defaultHref="/principal" color="plastic">
             </ion-back-button>
             <ion-title color="plastic">
-                Cadastro
+                Request Collection
             </ion-title>
         </ion-buttons>
     </ion-toolbar>
@@ -16,7 +16,7 @@
         Name:
     </ion-label>
 
-    <ion-input color="gray">
+    <ion-input [(ngModel)]="name" placeholder="full name">
     </ion-input>
 
     <br>
@@ -25,7 +25,7 @@
         Address:
     </ion-label>
 
-    <ion-input color="gray">
+    <ion-input [(ngModel)]="adrex" placeholder="Street and number">
     </ion-input>
 
     <br>
@@ -34,16 +34,34 @@
         Address Line 2:
     </ion-label>
 
-    <ion-input color="gray">
+    <ion-input [(ngModel)]="adrexL2" placeholder="flat, suite, building, other">
     </ion-input>
 
     <br>
 
     <ion-label>
-        City:
+        Postcode:
     </ion-label>
 
-    <ion-input color="gray">
+    <ion-input [(ngModel)]="pscode" placeholder="postcode">
+    </ion-input>
+
+    <br>
+
+    <ion-label>
+        Town/City:
+    </ion-label>
+
+    <ion-input [(ngModel)]="city" placeholder="town/city">
+    </ion-input>
+
+    <br>
+
+    <ion-label>
+        County:
+    </ion-label>
+
+    <ion-input [(ngModel)]="cont" placeholder="county">
     </ion-input>
 
     <br>
@@ -53,10 +71,10 @@
 
     <!--gambiarra a gente aceita-->
     <ion-label color="realWhite">
-        nothing here
+        nothing here....
     </ion-label>
 
-    <ion-button color="plastic" align="center">
-        Register
+    <ion-button color="plastic" size="large" align="center" (click)="send()">
+        Send
     </ion-button>
 </ion-content>
